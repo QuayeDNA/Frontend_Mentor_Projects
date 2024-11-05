@@ -1,4 +1,4 @@
-// TODO Task 1 Solution
+// Task 1 Solution
 
 // 1. String Transformation
 let string = "dave is a frontend developer";
