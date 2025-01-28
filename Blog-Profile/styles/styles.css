@@ -59,9 +59,19 @@ body {
     position: relative;
     box-shadow: 8px 8px 0px 0px #000000;
     border: black solid 1px;
+    transition: transform 0.2s ease;
 }
 
-/* Remove the unnecessary pseudo-element */
+.card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 10px 10px 0px 0px #000000;
+}
+
+.card:focus-within {
+    outline: 3px solid var(--grey-950);
+    outline-offset: 2px;
+}
+
 .card::before {
     display: none;
 }
