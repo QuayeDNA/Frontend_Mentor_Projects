@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles/styles.css">
   <title>Frontend Mentor | Blog preview card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <header>
+    <h1 class="sr-only">Blog Profile</h1>
+  </header>
 
-  Learning
+  <main class="container">
+    <section class="card">
+      <img src="./assets/images/illustration-article.svg" alt="illustration-article" class="card__img"> 
+      
+      <p class="card__tag">Learning</p>
 
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="card__content">
+        <article class="card__article">
+          <p class="date">Published 21 Dec 2023</p>
+          <h5 class="title">HTML &amp; CSS foundations</h5>
+          <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        </article>
+        <span class="card__author"> 
+          <img src="./assets/images/image-avatar.webp" alt="Author Avatar" class="author__img">
+          <p class="author__name">Greg Hooper</p>
+        </span>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">DNA_Q</a>.
+    </div>
+  </main>
 </body>
+
 </html>
