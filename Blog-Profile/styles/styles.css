@@ -38,6 +38,10 @@
 body {
     font-family: var(--font-family);
     background-color: #F4D04E;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -46,6 +50,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
 .card {
     background-color: #fff;
     border-radius: 20px;
@@ -134,6 +139,7 @@ body {
     font-size: var(--font-size-3);
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing);
+    font-weight: 700;
 }
 
 .sr-only {
