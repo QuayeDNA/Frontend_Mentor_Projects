@@ -64,11 +64,11 @@ body {
 
 .card:hover {
     transform: translate(-2px, -2px);
-    box-shadow: 10px 10px 0px 0px #000000;
+    box-shadow: 8px 8px 0px 0px #000000;
 }
 
 .card:focus-within {
-    outline: 3px solid var(--grey-950);
+    outline:1px solid var(--grey-950);
     outline-offset: 2px;
 }
 
