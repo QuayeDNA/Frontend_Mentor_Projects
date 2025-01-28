@@ -1,2 +1,4 @@
 # Frontend_Mentor_Projects
-A serires od frontend projects to better improve my frontend skills and other related specializations.
+A series of projects to improve my frontend skills and other related specializations.
+
+1. First solution QR-Code created using HTML CSS.
