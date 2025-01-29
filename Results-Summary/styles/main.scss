@@ -1,0 +1,188 @@
+@import "scss/mixins";
+@import "scss/variables";
+
+@function color($type, $name) {
+  @return map-get(map-get($colors, $type), $name);
+}
+
+// Base typography
+body {
+  @include typography(500);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: color("neutral", "pale-blue");
+}
+
+// header
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+// container
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  // results
+  .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(
+      to bottom,
+      color("gradients", "light-slate-blue"),
+      color("gradients", "light-royal-blue")
+    );
+    padding: 20px;
+    border-radius: 0 0 25px 25px;
+
+    &__title {
+      color: color("neutral", "light-lavender");
+      font-size: 12px;
+    }
+
+    &__score {
+      background: linear-gradient(
+        to bottom,
+        color("gradients", "violet-blue"),
+        color("gradients", "persian-blue")
+      );
+      width: 50px;
+      height: 50px;
+      aspect-ratio: 1;
+      font-size: 12px;
+      margin-bottom: 10px;
+      padding: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: color("neutral", "light-lavender");
+
+      .number {
+        font-size: 38px;
+        font-weight: 700;
+        color: color("neutral", "white");
+        margin-bottom: 5px;
+      }
+    }
+
+    &__feedback {
+      color: color("neutral", "light-lavender");
+      font-size: 12px;
+      margin-bottom: 10px;
+      text-align: center;
+      padding-inline: 20px;
+
+      .title {
+        font-size: 18px;
+        color: color("neutral", "white");
+        margin-bottom: 10px;
+      }
+    }
+  }
+.summary {
+    padding: 1.5rem;
+
+    &__title {
+        color: color("neutral", "dark-gray-blue");
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 0.5rem;
+        padding-inline: 1rem;
+        border-radius: 0.8rem;
+
+        &-left {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        &-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        &-title {
+            font-weight: 500;
+        }
+
+        &-score {
+            color: color("neutral", "dark-gray-blue");
+            font-weight: 700;
+            
+            span {
+                color: color("neutral", "dark-gray-blue");
+            }
+        }
+
+        // Modifiers
+        &--reaction {
+            background-color: transparentize(color("primary", "light-red"), 0.9);
+            .summary__item-title { color: color("primary", "light-red"); }
+        }
+
+        &--memory {
+            background-color: transparentize(color("primary", "orangey-yellow"), 0.9);
+            .summary__item-title { color: color("primary", "orangey-yellow"); }
+        }
+
+        &--verbal {
+            background-color: transparentize(color("primary", "green-teal"), 0.9);
+            .summary__item-title { color: color("primary", "green-teal"); }
+        }
+
+        &--visual {
+            background-color: transparentize(color("primary", "cobalt-blue"), 0.9);
+            .summary__item-title { color: color("primary", "cobalt-blue"); }
+        }
+    }
+
+    &__button {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 2rem;
+        background-color: color("neutral", "dark-gray-blue");
+        color: color("neutral", "white");
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background: linear-gradient(
+                to bottom,
+                color("gradients", "light-slate-blue"),
+                color("gradients", "light-royal-blue")
+            );
+        }
+    }
+}
+}

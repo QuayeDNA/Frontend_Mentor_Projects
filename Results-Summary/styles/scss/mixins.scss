@@ -1,0 +1,36 @@
+// Font Import Mixin
+@mixin font-face($font-family, $font-path, $font-weight: 100 900) {
+    @font-face {
+        font-family: $font-family;
+        src: url('#{$font-path}.ttf') format('truetype-variations');
+        font-weight: $font-weight;
+        font-display: swap;
+        font-variation-settings: 'wght' $font-weight;
+    }
+}
+
+@include font-face(
+    'HankenGrotesk', 
+    '../../assets/fonts/HankenGrotesk-VariableFont_wght'
+);
+
+// Font Variables
+$primary-font: 'HankenGrotesk', sans-serif;
+
+// Usage Example
+@mixin typography($weight: 500) {
+    font-family: $primary-font;
+    font-weight: $weight;
+}
+
+// breakpoints
+$breakpoints: (
+    'mobile': 375px,
+    'desktop': 1440px
+) !default;
+
+@mixin breakpoint($breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
