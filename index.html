@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor Projects</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <header class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        <nav class="max-w-7xl mx-auto relative z-10" role="navigation">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 py-6">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    <span class="block transform hover:scale-105 transition-transform duration-200">
+                        Frontend
+                    </span>
+                    <span class="block text-yellow-300 transform hover:scale-105 transition-transform duration-200">
+                        Challenges
+                    </span>
+                </h1>
+
+                <a href="https://www.frontendmentor.io" target="_blank" rel="noopener noreferrer"
+                    class="group flex items-center space-x-3 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full hover:bg-white/30 transition-all duration-300"
+                    aria-label="Visit Frontend Mentor website">
+                    <span class="text-white font-medium">Frontend Mentor</span>
+                    <span class="text-yellow-300 transform group-hover:translate-x-1 transition-transform duration-200">
+                        →
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <section aria-labelledby="projects-heading">
+            <h2 id="projects-heading" class="sr-only">Frontend Mentor Projects</h2>
+
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Developer Info -->
+                <div class="space-y-4">
+                    <h3 class="text-white text-lg font-bold">About Developer</h3>
+                    <p class="text-gray-400">Frontend Developer passionate about creating beautiful and accessible web experiences.</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="space-y-4">
+                    <h3 class="text-white text-lg font-bold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://www.frontendmentor.io/profile/QuayeDNA" 
+                               class="text-gray-400 hover:text-white transition-colors">
+                                Frontend Mentor Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                Portfolio
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Social Links -->
+                <div class="space-y-4">
+                    <h3 class="text-white text-lg font-bold">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/QuayeDNA" 
+                           class="text-gray-400 hover:text-white transition-colors"
+                           aria-label="GitHub">
+                           <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://twitter.com/QuayeDNA" 
+                           class="text-gray-400 hover:text-white transition-colors"
+                           aria-label="Twitter">
+                           <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/QuayeDNA" 
+                           class="text-gray-400 hover:text-white transition-colors"
+                           aria-label="LinkedIn">
+                           <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="mt-8 pt-8 border-t border-gray-800">
+                <p class="text-center text-gray-400">
+                    © 2024 Built with ❤️ by DNA_Q. Challenges from 
+                    <a href="https://www.frontendmentor.io" 
+                       class="text-white hover:text-gray-200 font-semibold transition-colors">
+                        Frontend Mentor
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Project data
+        const projects = [
+            {
+                name: "QR Code Component",
+                description: "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
+                url: "./QR-Code/index.html",
+                status: "complete",
+                difficulty: "newbie",
+                color: "blue",
+                icon: '<i class="fas fa-qrcode w-8 h-8"></i>',
+                technologies: ["HTML", "CSS"]
+            },
+            {
+                name: "Blog Preview Card",
+                description: "This challenge will help you practice building card components and working with images, hover states and custom CSS properties.",
+                url: "./Blog-Profile/index.html",
+                status: "complete",
+                difficulty: "newbie",
+                color: "yellow",
+                icon: '<i class="fas fa-newspaper w-8 h-8"></i>',
+                technologies: ["HTML", "CSS"]
+            },
+            // {
+            //     name: "Social Links Profile",
+            //     description: "Perfect if you're learning about link states, flexbox and mobile-first development. A great project to start learning responsive design.",
+            //     url: "./social-links-profile/index.html",
+            //     status: "in-progress",
+            //     difficulty: "junior",
+            //     color: "purple",
+            //     icon: '<svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>',
+            //     technologies: ["HTML", "CSS", "JavaScript"]
+            // }
+        ];
+
+        function createProjectCards() {
+            const container = document.querySelector('.grid');
+
+            projects.forEach(project => {
+                const card = document.createElement('article');
+                card.className = `
+                    group relative 
+                    bg-gradient-to-br from-${project.color}-50 to-white
+                    rounded-2xl overflow-hidden
+                    border border-${project.color}-200
+                    shadow-sm hover:shadow-xl
+                    transition-all duration-500 ease-out
+                    transform hover:-translate-y-1
+                `;
+
+                const link = document.createElement('a');
+                link.href = project.url;
+                link.className = 'block p-6 h-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-${project.color}-500';
+
+                // Status badge (New/Complete/In Progress)
+                const statusBadge = document.createElement('span');
+                statusBadge.className = `
+                    absolute top-4 right-4
+                    px-3 py-1 rounded-full
+                    text-xs font-semibold
+                    ${project.status === 'new' ? 'bg-green-100 text-green-800' :
+                        project.status === 'complete' ? 'bg-blue-100 text-blue-800' :
+                            'bg-yellow-100 text-yellow-800'}
+                `;
+                statusBadge.textContent = project.status;
+
+                // Project header with icon
+                const header = document.createElement('div');
+                header.className = 'flex items-center space-x-4 mb-6';
+
+                const iconContainer = document.createElement('div');
+                iconContainer.className = `
+                    w-16 h-16
+                    rounded-xl
+                    flex items-center justify-center
+                    text-3xl
+                    bg-${project.color}-100
+                    text-${project.color}-600
+                    group-hover:scale-110
+                    transition-transform duration-300
+                `;
+                iconContainer.innerHTML = project.icon;
+
+                // Project title
+                const title = document.createElement('div');
+                title.className = 'space-y-1';
+
+                const heading = document.createElement('h3');
+                heading.className = 'text-xl font-bold text-gray-900 group-hover:text-${project.color}-600 transition-colors';
+                heading.textContent = project.name;
+
+                const difficulty = document.createElement('span');
+                difficulty.className = `
+                    text-sm font-medium
+                    ${project.difficulty === 'newbie' ? 'text-green-600' :
+                        project.difficulty === 'junior' ? 'text-blue-600' :
+                            'text-purple-600'}
+                `;
+                difficulty.textContent = project.difficulty;
+
+                // Project description
+                const description = document.createElement('p');
+                description.className = 'mt-4 text-gray-600 line-clamp-3';
+                description.textContent = project.description;
+
+                // Technologies used
+                const techStack = document.createElement('div');
+                techStack.className = 'mt-6 flex flex-wrap gap-2';
+
+                project.technologies.forEach(tech => {
+                    const techBadge = document.createElement('span');
+                    techBadge.className = `
+                        px-2 py-1
+                        text-xs font-medium
+                        bg-${project.color}-50
+                        text-${project.color}-700
+                        rounded
+                    `;
+                    techBadge.textContent = tech;
+                    techStack.appendChild(techBadge);
+                });
+
+                // Assemble the card
+                title.appendChild(heading);
+                title.appendChild(difficulty);
+                header.appendChild(iconContainer);
+                header.appendChild(title);
+
+                link.appendChild(statusBadge);
+                link.appendChild(header);
+                link.appendChild(description);
+                link.appendChild(techStack);
+
+                card.appendChild(link);
+                container.appendChild(card);
+            });
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', createProjectCards);
+    </script>
+</body>
+
+</html>
