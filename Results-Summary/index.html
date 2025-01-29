@@ -1,93 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/main.css">
 
-  <title>Frontend Mentor | Results summary component</title>
+    <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-<body>
-  <header class="header">
-    <h1 class="sr-only">Report Summary</h1>
-  </header>
+  <body>
+    <header class="header">
+      <h1 class="sr-only">Report Summary</h1>
+    </header>
 
-  <main class="container">
-    <section class="result">
-      <h2 class="result__title">Your Result</h2>
+    <main class="container">
+      <section class="result">
+        <h2 class="result__title">Your Result</h2>
 
-      <div class="result__score">
-        <span class="number">76</span>
-        of 100
-      </div>
-      <div class="result__feedback">
-        <div class="title">Great</div>
-        You scored higher than 65% of the people who have taken this test.
-      </div>
-    </section>
-
-    <section class="summary">
-      <h2 class="summary__title">Summary</h2>
-      <div class="summary__list">
-         <div class="summary__item summary__item--reaction">
-          <div class="summary__item-left">
-            <img src="./assets/images/icon-reaction.svg" alt="Reaction icon" class="summary__item-icon" />
-            <p class="summary__item-title">Reaction</p>
-          </div>
-          <p class="summary__item-score"><span score>80</span> / 100</p>
+        <div class="result__score">
+          <span class="number">76</span>
+          of 100
         </div>
-
-        <div class="summary__item summary__item--memory">
-          <div class="summary__item-left">
-            <img src="./assets/images/icon-memory.svg" alt="Memory icon" class="summary__item-icon" />
-            <p class="summary__item-title">Memory</p>
-          </div>
-          <p class="summary__item-score"><span>92</span> / 100</p>
+        <div class="result__feedback">
+          <div class="title">Great</div>
+          You scored higher than 65% of the people who have taken this test.
         </div>
+      </section>
 
-        <div class="summary__item summary__item--verbal">
-          <div class="summary__item-left">
-            <img src="./assets/images/icon-verbal.svg" alt="Verbal icon" class="summary__item-icon" />
-            <p class="summary__item-title">Verbal</p>
+      <section class="summary">
+        <h2 class="summary__title">Summary</h2>
+        <div class="summary__list">
+          <div class="summary__item summary__item--reaction">
+            <div class="summary__item-left">
+              <img src="./assets/images/icon-reaction.svg" alt="Reaction icon" class="summary__item-icon" />
+              <p class="summary__item-title">Reaction</p>
+            </div>
+            <p class="summary__item-score"><span score>80</span> / 100</p>
           </div>
-          <p class="summary__item-score"><span>61</span> / 100</p>
+
+          <div class="summary__item summary__item--memory">
+            <div class="summary__item-left">
+              <img src="./assets/images/icon-memory.svg" alt="Memory icon" class="summary__item-icon" />
+              <p class="summary__item-title">Memory</p>
+            </div>
+            <p class="summary__item-score"><span>92</span> / 100</p>
+          </div>
+
+          <div class="summary__item summary__item--verbal">
+            <div class="summary__item-left">
+              <img src="./assets/images/icon-verbal.svg" alt="Verbal icon" class="summary__item-icon" />
+              <p class="summary__item-title">Verbal</p>
+            </div>
+            <p class="summary__item-score"><span>61</span> / 100</p>
+          </div>
+
+          <div class="summary__item summary__item--visual">
+            <div class="summary__item-left">
+              <img src="./assets/images/icon-visual.svg" alt="Visual icon" class="summary__item-icon" />
+              <p class="summary__item-title">Visual</p>
+            </div>
+            <p class="summary__item-score"><span>72</span> / 100</p>
+          </div>
         </div>
+        <button class="summary__button">Continue</button>
+      </section>
+    </main>
 
-        <div class="summary__item summary__item--visual">
-          <div class="summary__item-left">
-            <img src="./assets/images/icon-visual.svg" alt="Visual icon" class="summary__item-icon" />
-            <p class="summary__item-title">Visual</p>
-          </div>
-          <p class="summary__item-score"><span>72</span> / 100</p>
-        </div> -->
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">DNA_Q</a>.
       </div>
-      <button class="summary__button">Continue</button>
-    </section>
-  </main>
+    </footer>
+  </body>
+  <script src="main.js"></script>
 
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">DNA_Q</a>.
-    </div>
-  </footer>
-</body>
-<script src="main.js"></script>
-</html>
+  </html>

@@ -114,7 +114,7 @@ body {
   font-weight: 500;
 }
 .container .summary__item-score {
-  color: hsl(224, 30%, 27%);
+  color: gray;
   font-weight: 700;
 }
 .container .summary__item-score span {
