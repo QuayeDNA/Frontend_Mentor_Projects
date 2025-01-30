@@ -1,6 +1,7 @@
 @import "scss/mixins";
 @import "scss/variables";
 
+// Function to retrieve color values from the color map
 @function color($type, $name) {
   @return map-get(map-get($colors, $type), $name);
 }
@@ -10,14 +11,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-// Base typography
+// Base Typography
+// Base Typography
 body {
   @include typography(500);
   background-color: color("neutral", "pale-blue");
 }
 
-// header
+// Header
 .sr-only {
   position: absolute;
   width: 1px;
@@ -30,7 +31,7 @@ body {
   border-width: 0;
 }
 
-// container
+// Container
 .container {
   width: 100%;
   min-height: 100vh;
@@ -38,7 +39,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  // results
+  // Results
   .result {
     display: flex;
     flex-direction: column;
@@ -200,8 +201,15 @@ body {
       }
     }
   }
+
+  .error-message {
+    color: color("primary", "light-red");
+    font-size: 12px;
+    margin-block-start: 10px;
+  }
 }
 
+// The breakpoint mixin is used to apply styles for different screen sizes, in this case for mobile devices.
 @include breakpoint("mobile") {
   body {
     min-height: 100vh;

@@ -162,6 +162,11 @@ body {
 .container .summary__button:hover {
   background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
+.container .error-message {
+  color: hsl(0, 100%, 67%);
+  font-size: 12px;
+  margin-block-start: 10px;
+}
 
 @media screen and (min-width: 376px) {
   body {
