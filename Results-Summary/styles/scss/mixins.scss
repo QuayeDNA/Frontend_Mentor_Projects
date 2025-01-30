@@ -25,12 +25,19 @@ $primary-font: 'HankenGrotesk', sans-serif;
 
 // breakpoints
 $breakpoints: (
-    'mobile': 375px,
+    'mobile': 376px,
+    'tablet': 768px,
+    'laptop': 1024px,
     'desktop': 1440px
 ) !default;
 
-@mixin breakpoint($breakpoint) {
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
-        @content;
+@mixin breakpoint($size) {
+    @if map-has-key($breakpoints, $size) {
+        @media screen and (min-width: map-get($breakpoints, $size)) {
+            @content;
+        }
+    } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$size}`. "
+            + "Available breakpoints are: #{map-keys($breakpoints)}.";
     }
 }

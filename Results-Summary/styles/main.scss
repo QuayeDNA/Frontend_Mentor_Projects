@@ -5,12 +5,15 @@
   @return map-get(map-get($colors, $type), $name);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 // Base typography
 body {
   @include typography(500);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   background-color: color("neutral", "pale-blue");
 }
 
@@ -29,11 +32,11 @@ body {
 
 // container
 .container {
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 
   // results
   .result {
@@ -47,11 +50,12 @@ body {
       color("gradients", "light-royal-blue")
     );
     padding: 20px;
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 32px 32px;
 
     &__title {
       color: color("neutral", "light-lavender");
       font-size: 12px;
+      margin-block: 10px;
     }
 
     &__score {
@@ -60,12 +64,12 @@ body {
         color("gradients", "violet-blue"),
         color("gradients", "persian-blue")
       );
-      width: 50px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
       aspect-ratio: 1;
       font-size: 12px;
       margin-bottom: 10px;
-      padding: 30px;
+      padding: 70px;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -74,7 +78,7 @@ body {
       color: color("neutral", "light-lavender");
 
       .number {
-        font-size: 38px;
+        font-size: 36px;
         font-weight: 700;
         color: color("neutral", "white");
         margin-bottom: 5px;
@@ -96,7 +100,7 @@ body {
     }
   }
 .summary {
-    padding: 1.5rem;
+    padding-inline: 1.5rem;
 
     &__title {
         color: color("neutral", "dark-gray-blue");
@@ -115,7 +119,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-block: 0.5rem;
+        padding-block: 0.2rem;
         padding-inline: 1rem;
         border-radius: 0.8rem;
 
@@ -182,6 +186,68 @@ body {
                 color("gradients", "light-slate-blue"),
                 color("gradients", "light-royal-blue")
             );
+        }
+    }
+}
+}
+
+@include breakpoint("mobile") {
+    body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+
+    .container {
+        width: 1000px;
+        min-height: 512px;
+        margin: auto;
+        flex-direction: row;
+        border-radius: 32px;
+        background: color("neutral", "white");
+        box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+
+    .result {
+        width: 50%;
+        border-radius: 32px;
+        padding: 38px 54px;
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 35px;
+        }
+
+        &__score {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 28px;
+
+            .number {
+                font-size: 72px;
+            }
+        }
+
+        &__feedback {
+            .title {
+                font-size: 32px;
+                margin-bottom: 14px;
+            }
+            font-size: 18px;
+            padding-inline: 0;
+        }
+    }
+
+    .summary {
+        width: 50%;
+        padding: 38px 40px;
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 28px;
+        }
+
+        &__item {
+            padding: 20px;
         }
     }
 }
