@@ -107,6 +107,14 @@ h6 {
 @spacing-700: 3.5rem;
 @spacing-800: 4rem;
 
+.title-styles() {
+  font-size: 1.5rem;
+  font-weight: @font-weight;
+  color: @brown-800;
+  margin-bottom: @spacing-200;
+  font-family: @font-primary;
+}
+
 body {
   font-family: @font-primary;
   font-size: @font-size-body;
@@ -212,11 +220,7 @@ body {
       color: @stone-600;
 
       .title {
-        font-size: 1.5rem;
-        font-weight: @font-weight;
-        color: @brown-800;
-        margin-bottom: @spacing-200;
-        font-family: @font-primary;
+        .title-styles();
       }
 
       .text-list {
@@ -256,11 +260,7 @@ body {
       color: @stone-600;
 
       .title {
-        font-size: 1.5rem;
-        font-weight: @font-weight;
-        color: @brown-800;
-        margin-bottom: @spacing-200;
-        font-family: @font-primary;
+        .title-styles();
       }
 
       .text-list {
@@ -303,11 +303,7 @@ body {
       color: @stone-600;
 
       .title {
-        font-size: 1.5rem;
-        font-weight: @font-weight;
-        color: @brown-800;
-        margin-bottom: @spacing-200;
-        font-family: @font-primary;
+        .title-styles();
       }
 
       .text {
