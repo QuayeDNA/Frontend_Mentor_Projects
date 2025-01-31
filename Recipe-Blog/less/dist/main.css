@@ -106,37 +106,37 @@ body {
   color: hsl(30, 10%, 34%);
   margin-bottom: 1.5rem;
 }
-.container .recipe__text .recipe__time {
+.container .recipe__text .time {
   font-family: "Outfit", sans-serif;
   font-size: 1rem;
   background-color: hsl(330, 100%, 98%);
   padding: 1rem;
   border-radius: 0.5rem;
 }
-.container .recipe__text .recipe__time .title {
+.container .recipe__text .time .title {
   font-size: 1.2rem;
   font-weight: 600;
   color: hsl(332, 51%, 32%);
   margin-bottom: 0.5rem;
 }
-.container .recipe__text .recipe__time .text-list {
+.container .recipe__text .time .text-list {
   font-size: 1rem;
   font-weight: 400;
   color: hsl(30, 10%, 34%);
   margin-bottom: 0.5rem;
 }
-.container .recipe__text .recipe__time .text-list li {
+.container .recipe__text .time .text-list li {
   position: relative;
   padding-left: 2.5em;
   margin-bottom: 0.5em;
 }
-.container .recipe__text .recipe__time .text-list li:before {
+.container .recipe__text .time .text-list li:before {
   content: "•";
   position: absolute;
   left: 0.5rem;
   color: hsl(332, 51%, 32%);
 }
-.container .recipe__text .recipe__time .text-list li span {
+.container .recipe__text .time .text-list li span {
   font-weight: 600;
 }
 .container .recipe__ingredients {
@@ -279,7 +279,7 @@ body {
   .container .recipe__text .title {
     font-size: 2rem;
   }
-  .container .recipe__text .recipe__time .title {
+  .container .recipe__text__time .title {
     font-size: 1.1rem;
   }
   .container .recipe__ingredients {
